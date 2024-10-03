@@ -33,11 +33,7 @@ Cada producto tiene los siguientes campos:
 ## Requisitos
 
 - Python 3.12.7 instalado en tu máquina. Puedes descargarlo desde
-<<<<<<< HEAD
   [python.org](https://www.python.org/).
-=======
-  [python.org](https://www.python.org/downloads/).
->>>>>>> ae08f5a0ff708312a5789c14fed023d213e4b244
 - FastAPI y Uvicorn para ejecutar la aplicación.
 
 Nota: Windows 11 como sistema operativo (SO).
