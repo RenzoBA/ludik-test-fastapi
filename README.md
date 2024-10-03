@@ -33,7 +33,7 @@ Cada producto tiene los siguientes campos:
 ## Requisitos
 
 - Python 3.12.7 instalado en tu máquina. Puedes descargarlo desde
-  [python.org](https://www.python.org/). Nota: Para este desarrollo se ha
+  [python.org](https://www.python.org/downloads/). Nota: Para este desarrollo se ha
   utilizado Node v22.3.0.
 - FastAPI y Uvicorn para ejecutar la aplicación.
 
