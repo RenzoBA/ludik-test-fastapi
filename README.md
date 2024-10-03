@@ -33,8 +33,7 @@ Cada producto tiene los siguientes campos:
 ## Requisitos
 
 - Python 3.12.7 instalado en tu máquina. Puedes descargarlo desde
-  [python.org](https://www.python.org/). Nota: Para este desarrollo se ha
-  utilizado Node v22.3.0.
+  [python.org](https://www.python.org/).
 - FastAPI y Uvicorn para ejecutar la aplicación.
 
 Nota: Windows 11 como sistema operativo (SO).
@@ -44,15 +43,26 @@ Nota: Windows 11 como sistema operativo (SO).
 1. **Clona o descarga el repositorio:** Clona o descarga el repositorio en tu
    máquina.
 
-2. **Ejecuta la aplicación:** Abre una terminal en la carpeta donde se
-   encuentran los archivos del proyecto y ejecuta el siguiente comando:
-   `uvicorn main:app --reload`
+2. **Crea un entorno virtual:** Accede a la carpeta del proyeto, crea un entorno
+   virtual con el comando: `python -m venv venv` y accede a él desde la terminal
+   `.\venv\Scripts\activate`.
 
-3. **Accede a la documentación de la API:** Una vez que el servidor esté en
+3. **Instalar dependencias:** Instala las dependencias del proyecto con el
+   comando: `pip install -r requirements.txt`.
+
+4. **Configura el archivo .env:** Copia el archivo de configuración de ejemplo y
+   actualiza las variables de entorno de ser necesario: `cp .env.example .env`.
+   Nota: Para este ejemplo se ha utilizado SQLite, por lo que no se requiere
+   modificar el valor de `SQLALCHEMY_DATABASE_URL`.
+
+5. **Ejecuta la aplicación:** Desde la carpeta donde se encuentran los archivos
+   del proyecto ejecuta el siguiente comando: `uvicorn main:app --reload`
+
+6. **Accede a la documentación de la API:** Una vez que el servidor esté en
    funcionamiento, puedes acceder a la documentación interactiva de la API en
    `http://127.0.0.1:8000/docs`
 
-4. **Resultados:** El script mostrará en la terminal el número total de URLs que
+7. **Resultados:** El script mostrará en la terminal el número total de URLs que
    cumplen con los criterios y también listará las URLs únicas que fueron
    encontradas.
 
